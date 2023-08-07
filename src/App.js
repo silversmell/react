@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import Login from './pages/Login';
 /**const App = () => {
     return (
         <Router>
@@ -28,28 +27,27 @@ export default App;**/
         </div>
     );
 }**/
-import React, { useEffect } from 'react'
-import axios from 'axios'
-// import { response } from 'express'
-
-function LandingPage() {
-
-    useEffect(() => {
-        axios.get('/api/hello')
-            .then(response => console.log(response.data))
-    }, [])
-
+function LoginPage() {
     return (
         <div style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center',
             width: '100%', height: '100vh'
         }}>
-            <h2>start page</h2>
-        </div>
+            <form>
+                <label>Email</label>
+                <input type="email" value onChange></input>
+                <label>Password</label>
+                <input type="password" value onChange></input>
+                <br></br>
+                <button>Login</button>
+            </form>
+          </div>
+          
+
+
     )
 }
-
-export default LandingPage
+export default LoginPage
 
 
 
