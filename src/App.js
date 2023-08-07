@@ -1,9 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './pages/Login.js';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Categories from './components/Categories.js';
 
-const App = () => {
+
+/**const App = () => {
     return (
         <Router>
         <Routes>
@@ -15,6 +13,17 @@ const App = () => {
     );
 };
 
+
+export default App;**/
+import Button from "./Button";
+
+function App() {
+    return (
+        <div>
+            <Button text={"Continue"} />
+        </div>
+    );
+}
 
 export default App;
 
