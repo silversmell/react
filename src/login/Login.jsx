@@ -13,15 +13,15 @@ function Login() {
     const [useridFromServer, setUseridFromServer] = useState("");
 
     useEffect(() => {
-        fetch("/users")
+        fetch("/users/account/123")
             .then(response => response.json())
             .then(data => {
                 setMessage(data.message);
-                setUseridFromServer(data.userid);
+                setUseridFromServer(data);
             });
     }, []);
     const navigateToSiginin = () => {
-        if (userid === useridFromServer) {
+        if (userid === useridFromServer.toString()) {
             navigate("/signin");
         } else {
             console.log("userid:", userid);
