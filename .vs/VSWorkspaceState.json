@@ -3,8 +3,11 @@
     "",
     "\\public",
     "\\src",
-    "\\src\\ch05"
+    "\\src\\ch05",
+    "\\src\\ch06",
+    "\\src\\ch07",
+    "\\src\\login"
   ],
-  "SelectedNode": "\\src\\index.js",
+  "SelectedNode": "\\src\\login\\Login.jsx",
   "PreviewInSolutionExplorer": false
 }

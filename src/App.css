@@ -23,6 +23,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.mainBody {
+    background-color: white;
+    color: blue;
+    margin: 10px;
+    font-family: Arial;
+    text-align: center;
+}
 
 .App-link {
   color: #61dafb;
