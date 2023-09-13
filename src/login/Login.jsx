@@ -13,7 +13,7 @@ function Login() {
     const [useridFromServer, setUseridFromServer] = useState("");
 
     useEffect(() => {
-        fetch("/users/account/123")
+        fetch("/users/userid")
             .then(response => response.json())
             .then(data => {
                 setMessage(data.message);
